@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = this.findViewById(R.id.roll_button)
         rollButton.text = this.getString(R.string.roll_button_default)
         rollButton.setOnClickListener {
-            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.roll_message, Toast.LENGTH_SHORT).show()
         }
     }
 }

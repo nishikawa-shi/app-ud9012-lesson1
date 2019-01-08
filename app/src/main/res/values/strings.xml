@@ -3,4 +3,5 @@
     <string name="default_result">1</string>
     <string name="roll">roll</string>
     <string name="roll_button_default">Let\'s roll!</string>
+    <string name="roll_message">button clicked</string>
 </resources>
