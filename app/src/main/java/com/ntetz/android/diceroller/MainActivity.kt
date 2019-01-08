@@ -22,7 +22,5 @@ class MainActivity : AppCompatActivity() {
         val offset = 1
         val range = 6
         val randomInt = Random().nextInt(range) + offset
-        val resultText: TextView = this.findViewById(R.id.result_text)
-        resultText.text = randomInt.toString()
     }
 }
