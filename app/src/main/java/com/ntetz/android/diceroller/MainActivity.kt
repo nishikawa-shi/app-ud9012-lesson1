@@ -1,12 +1,12 @@
 package com.ntetz.android.diceroller
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.ImageView
+import com.crashlytics.android.Crashlytics
+import io.fabric.sdk.android.Fabric
 import java.util.*
-import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
 
 class MainActivity : AppCompatActivity() {
     lateinit var diceImage: ImageView
