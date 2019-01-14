@@ -9,11 +9,15 @@ import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 
 class MainActivity : AppCompatActivity() {
+    lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Fabric.with(this, Crashlytics())
         setContentView(R.layout.activity_main)
+
+        this.diceImage = this.findViewById(R.id.dice_image)
+
         val rollButton: Button = this.findViewById(R.id.roll_button)
         rollButton.text = this.getString(R.string.roll_button_default)
         rollButton.setOnClickListener {
@@ -25,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         val offset = 1
         val range = 6
         val randomInt = Random().nextInt(range) + offset
-        val diceImage: ImageView = this.findViewById(R.id.dice_image)
         val drawableResource = when (randomInt) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
